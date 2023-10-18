@@ -1,5 +1,5 @@
 <html>
     <body>
-        <h1>Seja bem vindo</h1>
+        <h1>Bem-Vindo</h1>
     </body>
-</html>
+<html>
