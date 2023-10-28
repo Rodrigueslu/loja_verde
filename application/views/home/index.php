@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <hr/>
     <h1>Bem-vindo</h1>
     <hr/>
     <p>Minha Pagina</p>

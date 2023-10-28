@@ -1,6 +1,6 @@
 <?php
 namespace application\core;
-class App{
+class app{
     protected $controller = 'HomeController';
     protected $method = 'index';
     protected $page404 = false;
@@ -22,13 +22,13 @@ class App{
 
     private function getControllerFromUrl($url){
         if(!empty($url[0]) && isset($url[0])){
-            if(file_exists('../application/controllers/' . ucfirst($url[0]) . 'Controller.php') ){
+            if(file_exists('../Application/controllers/' . ucfirst($url[0]) . 'Controller.php') ){
                 $this->controller = ucfirst($url[0]).'Controller';
             }else{
                 $this->page404 = true;
             }
         }        
-        require_once '../application/controllers/'.$this->controller . '.php';
+        require_once '../Application/controllers/'.$this->controller . '.php';
         $this->controller = new $this->controller();
     }            
     private function getMethodFromUrl($url){

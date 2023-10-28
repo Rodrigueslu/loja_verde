@@ -3,6 +3,10 @@
     //debug_print_backtrace();
     include $base .'\..\layout\menu.php';
 ?>
+<hr/>
 
+<h1>Produtos</h1>
+<hr/>
 
-<h1>Olaa</h1>
+<a href="/produto/cadastrar">Adicionar Produto</a>
+
