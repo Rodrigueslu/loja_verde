@@ -1,5 +1,6 @@
 <?php
     $base = __DIR__;
+    //debug_print_backtrace();
     include $base .'\..\layout\menu.php';
 ?>
 
@@ -10,6 +11,7 @@
 </head>
 
 <body>
+    <hr/>
     <h1>Bem-vindo</h1>
     <hr/>
     <p>Minha Pagina</p>

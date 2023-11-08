@@ -6,9 +6,11 @@
     <body>
 	<?php
 		require_once '../Application/core/autoload.php';
-		use application\core\App;
-		use application\core\Controller;
-		$app = new App();
+		use Application\core\App;
+		use Application\core\Controller;
+		$app = new app();
+
+
 	?>
     </body>
 <html>
