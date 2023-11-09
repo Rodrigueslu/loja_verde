@@ -3,7 +3,7 @@
         private $dbName = "loja";
         private $usuario = "root";
         private $senha  = "sucesso";
-        private $host = "localhost";
+        private $host = "localhost loja";
         // carrega a conexão realizada com o banco
         private $conn;
         public function __construct(){
@@ -19,6 +19,7 @@
         public function desconectar(){
             $this->conn->close();
         }
+        public function getConexoa(){}
 
 
     }

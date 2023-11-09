@@ -1,5 +1,7 @@
 <?php
-    use Application\core\Controller;
+    use application\core\controller;
+    use application\dao\ProdutoDAO;
+    use application\models\Produto;
     class ProdutoController extends Controller{
         public function index (){
             $this->view('produto/index');
@@ -10,11 +12,15 @@
         public function salvar(){
             $nome = $_POST['nome_produto'];
             $marca = $_POST['marca'];
-            print_r($nome);
-            print_r($marca);
+            $preco = $_POST['preco'];
+            // Como construir um objeto produto aqui
+            $produto = new Produto($nome,$marca,$preco);
             
-            //$produtoDAO = new ProdutoDAO();
-            //$produtoDAO->salvar($produto);
+
+
+            $produtoDAO = new ProdutoDAO();
+            $produtoDAO->salvar($produto);
+
         }
     }
 
