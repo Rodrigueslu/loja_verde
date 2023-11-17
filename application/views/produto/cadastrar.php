@@ -1,17 +1,22 @@
-
 <?php
-    $base = __DIR__;
-    //debug_print_backtrace();
-    include $base .'\..\layout\menu.php';
-?>
-<hr/>
-<form action="/produto/salvar" method="POST">
-    
-    <label > Produto</label>
-    <input type="text"name="nome_produto"/>
-    <label for=""> Marca </label>
-    <input type="text" name="marca"/>
-    <label for=""> Preco </label>
-    <input type="text" name="preco"/>
-    <input type="submit" value="Cadastrar"/>
+$base = __DIR__;
+include $base .'\..\layout\menu.php'; 
+//debug_print_backtrace();
+ ?>
+ <?php 
+    if(isset($data["msg"])){
+        echo "Sucesso";
+    }
+ ?>
+<form action="/produto/salvar" method="POST"
+ class="form-control">
+    <label> Nome Produto </label>
+    <input type="text" name="nome_produto" 
+    class="form-control" />
+    <label> Marca </label>
+<input type="text" name="marca" class="form-control"/>
+<label> Preço </label>
+<input type="text" name="preco" class="form-control"/>
+    <input type="submit" value="Cadastrar"
+     class="form-control"/>
 </form>

@@ -1,19 +1,15 @@
 <?php
-    $base = __DIR__;
-    //debug_print_backtrace();
-    include $base .'\..\layout\menu.php';
-?>
-
+$base = __DIR__;
+include $base .'\..\layout\menu.php'; 
+//debug_print_backtrace();
+ ?>
 <html>
 <head>
 
-
 </head>
-
 <body>
-    <hr/>
-    <h1>Bem-vindo</h1>
-    <hr/>
-    <p>Minha Pagina</p>
+    <h1> Bem-Vindo </h1>
+    <hr />
+    <p> Minha Página </p>
 </body>
 </html>
