@@ -24,7 +24,7 @@
    4. [x] Cadastrar Produto
    5. [x] Index Produto (Listar Produto)
    6. [x] Editar Produto
-10. [ ] Funcionalidade Excluir Produto [0.5]
+10. [x] Funcionalidade Excluir Produto [0.5]
 11. [ ] Cadastrar Usuário [0.5]
 12. [ ] Pesquisar Usuário [0.5]
 13. [ ] Alterar Usuário [0.5]
