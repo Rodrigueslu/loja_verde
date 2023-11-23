@@ -10,6 +10,5 @@ include $base .'\..\layout\menu.php';
 <body>
     <h1> Bem-Vindo </h1>
     <hr />
-    <p> Minha Página </p>
 </body>
 </html>
