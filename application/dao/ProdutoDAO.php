@@ -45,7 +45,7 @@ array_push($produtos, $produto);
      $SQL = "SELECT * FROM produtos WHERE codigo =".$id;
      $result = $conn->query($SQL);
      $row = $result->fetch_assoc();
-$produto = new Produto($row["nome"], $row["marca"], $row["preco"]);
+    $produto = new Produto($row["nome"], $row["marca"], $row["preco"]);
      $produto->setCodigo($row["codigo"]);
      return $produto;
     }

@@ -15,7 +15,7 @@ class App
         $this->getControllerFromUrl($URL_ARRAY);
         $this->getMethodFromUrl($URL_ARRAY);
         $this->getParamsFromUrl($URL_ARRAY);
-call_user_func_array([$this->controller, $this->method], $this->params);    
+        call_user_func_array([$this->controller, $this->method], $this->params);    
 }
 public function parseUrl(){
 $REQUEST_URI = explode('/', substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), 1));

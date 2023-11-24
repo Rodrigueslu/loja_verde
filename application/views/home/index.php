@@ -5,7 +5,7 @@ include $base .'\..\layout\menu.php';
  ?>
 <html>
 <head>
-
+    <title>Início</title>
 </head>
 <body>
     <h1> Bem-Vindo </h1>
