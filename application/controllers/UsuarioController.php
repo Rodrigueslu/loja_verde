@@ -1,18 +1,17 @@
 <?php
 
 use Application\core\Controller;
-use Application\dao\UsuarioDAO;
-use Application\models\Usuario;
+
 
 class UsuarioController extends Controller{
 
         public function index(){
-            $this->view('usuario/index');   
+            $this->view('/usuario/index');   
             
         }   
 
         public function cadastrar(){
-            $this->view('usuario/cadastrar');  
+            $this->view('/usuario/cadastrar');  
 
         }   
         public function validarcadastro(){
